@@ -1,0 +1,7 @@
+poll_rate: 60
+active_poll_rate: 30
+consumer_key: WU2SGTIubwbwVnDYjppbAw
+consumer_secret: EdQQnWYsqOp4oKlfSLlW3a278k2KWY0yIwLbCPHK5c
+access_token: 
+access_token_secret:
+destination: twitter_username

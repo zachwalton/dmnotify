@@ -1,0 +1,42 @@
+--------------------------------
+
+DMNotify: A notification script for Irssi based on GMNotify.  When away, sends an Twitter DM on channel highlights/PMs.  Supports responding.
+Version: 1.0
+Author: Zach Walton
+
+--------------------------------
+
+REQUIRED PACKAGES:
+
+- Net::Twitter
+
+SETUP:
+
+Copy the included dmnotify.yaml to ~/.irssi (make sure it's writable).  You'll 
+need to change "destination" to the Twitter username you want to receive
+tweets at.
+
+Copy dmnotify.pl to ~/.irssi/scripts/dmnotify.pl.
+
+Within Irssi:
+
+[zorachus] /script load dmnotify.pl
+
+-!- You need to authorize this application.  Retrieve the PIN: 
+-!- 
+-!- https://api.twitter.com/oauth/authorize?oauth_token=xxxyyyzzzxxxyyyzzz
+-!- 
+-!- After retrieving the PIN, set it with:
+-!- /set dmnotify_auth <PIN>
+-!- 
+12:48 -!- Irssi: Loaded script dmnotify
+
+Follow the instructions and retrieve the PIN from the URL it generates.  Note
+that you'll want to authorize the Twitter account that you want to SEND
+DMs from, not receive them at.  I created a separate Twitter account just to
+send DMs to my main account and process responses.
+
+That's it!  Please let me know if you run into any bugs.  Also, note that
+Twitter limits clients to 350 requests per hour, so I suggest not setting
+the polling rate too high.
+
