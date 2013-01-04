@@ -1,7 +1,14 @@
-poll_rate: 60
-active_poll_rate: 30
+# Configuration file for dmnotify.pl
+
+# How often to check for responses (in seconds)
+poll_rate: 30
+# dmnotify consumer key
 consumer_key: WU2SGTIubwbwVnDYjppbAw
+# dmnotify consumer secret
 consumer_secret: EdQQnWYsqOp4oKlfSLlW3a278k2KWY0yIwLbCPHK5c
+# dmnotify access token (don't set this manually)
 access_token: 
-access_token_secret:
+# dmnotify access secret (don't set this manually)
+access_token_secret: 
+# twitter account that DMs should be sent to
 destination: twitter_username
